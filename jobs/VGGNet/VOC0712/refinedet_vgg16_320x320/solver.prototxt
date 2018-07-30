@@ -1,0 +1,21 @@
+train_net: "models/VGGNet/VOC0712/refinedet_vgg16_320x320/train.prototxt"
+base_lr: 0.0010000000475
+display: 10
+max_iter: 120000
+lr_policy: "multistep"
+gamma: 0.10000000149
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+snapshot: 100
+snapshot_prefix: "models/VGGNet/VOC0712/refinedet_vgg16_320x320/VOC0712_refinedet_vgg16_320x320"
+solver_mode: GPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+average_loss: 10
+stepvalue: 80000
+stepvalue: 100000
+stepvalue: 120000
+iter_size: 1
+type: "SGD"
+
